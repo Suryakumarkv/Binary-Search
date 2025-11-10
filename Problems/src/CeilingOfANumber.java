@@ -1,5 +1,6 @@
 //Ceiling of a number -> Smallest Element in array that is greater or equal to target element
 //if element is present then retuen it or return start instead -1 from binary Search
+
 public class CeilingOfANumber {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 9, 14, 16, 18};
