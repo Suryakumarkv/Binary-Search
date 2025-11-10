@@ -30,6 +30,3 @@ public class FloorOfAnArrayNumber {
     }
 }
 
-//Ceiling of a number -> Smallest Element in array that is greater or equal to target element
-//if element is present then retuen it or return start instead -1 from binary Search
-
