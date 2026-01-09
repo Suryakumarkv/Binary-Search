@@ -5,7 +5,7 @@ public class FloorOfAnArrayNumber {
 
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 9, 14, 16, 18};
-        int x = 9;
+        int x = 8;
         int Floor = FloorOfanElem(arr, x);
         System.out.println("Floor of " + x + " is: " + Floor);
     }
@@ -19,14 +19,14 @@ public class FloorOfAnArrayNumber {
 
             if(arr[mid] == x) {
                 return arr[mid];
-            } else if(arr[mid] > x) {
+            } else if(arr[mid] < x) {
                 ans = arr[mid];
-                right = mid - 1;
-            } else {
                 left = mid + 1;
+            } else {
+                right = mid - 1;
             }
         }
-        return arr[right];
+        return ans;
     }
 }
 
